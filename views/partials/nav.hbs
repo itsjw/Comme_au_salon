@@ -1,0 +1,78 @@
+<div class="container">
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <p class="damdam">Damien eckly</p>
+               <!-- <img src="/images/icone_DE.png" alt="mon site cv" width="60" height="28"> -->
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/minibras" target="_blank">
+                <span class="icon" style="color: #333;">
+        <i class="fa fa-lg fa-github"></i>
+      </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/damien-eckly-475a56122/" target="_blank">
+                <span class="icon" style="color: #55acee;">
+        <i class="fa fa-lg fa-linkedin"></i>
+      </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenuTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item is-hoverable" href="/competence">
+                    <p class="damdam">Compétences</p>
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item is-hidden-desktop-only" href="https://github.com/minibras" target="_blank">
+                    <span class="icon" style="color: #333;">
+          <i class="fa fa-lg fa-github"></i>
+        </span>
+                </a>
+                <a class="navbar-item is-hidden-desktop-only" href="https://www.linkedin.com/in/damien-eckly-475a56122/" target="_blank">
+                    <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-linkedin"></i>
+        </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // Get all "navbar-burger" elements
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(function($el) {
+                $el.addEventListener('click', function() {
+
+                    // Get the target from the "data-target" attribute
+                    var target = $el.dataset.target;
+                    var $target = document.getElementById(target);
+
+                    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                    $el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+
+</script>

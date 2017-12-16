@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/Background.png");
+    background-size: cover;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.navbar {
+    opacity: 0.85;
+}
+

@@ -1,0 +1,4 @@
+{
+    "GET/" : {"controler": "index"},
+    "GET/users" : {"controler": "users"}
+}
